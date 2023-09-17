@@ -6,7 +6,7 @@
 
 The Job Matching System is an advanced Python-based project that leverages state-of-the-art Natural Language Processing (NLP) techniques to streamline the process of matching job descriptions with candidate resumes. This project showcases a rich set of skills and capabilities that make it a valuable tool for HR professionals and hiring managers seeking efficient and effective candidate screening.
 
-### Purpose
+## Purpose
 
 The primary purpose of the Job Matching System is to address the challenges faced during the hiring process, such as:
 
@@ -17,19 +17,20 @@ The primary purpose of the Job Matching System is to address the challenges face
 
 By automating the matching process and providing a data-driven approach, this tool helps organizations identify the most qualified candidates quickly and effectively.
 
-### Key Skills and Capabilities Demonstrated
-## 1. Data Extraction from PDFs
+## Key Skills and Capabilities Demonstrated
+### 1. Data Extraction from PDFs
    
 One of the core functionalities of the Job Matching System is its ability to extract vital information from candidate resumes in PDF format. This is achieved using the PyMuPDF library (PyMuPDF is now known as fitz), and it showcases the following skills:
 
-PDF Parsing: The system demonstrates the ability to parse PDF documents efficiently, extracting text data for further analysis.
+- **PDF Parsing**: The system demonstrates the ability to parse PDF documents efficiently, extracting text data for further analysis.
 
-Error Handling: Robust error handling ensures the project gracefully handles exceptions that may arise during the PDF extraction process.
+- **Error Handling**: Robust error handling ensures the project gracefully handles exceptions that may arise during the PDF extraction process.
 
-2. Text Data Preprocessing
+### 2. Text Data Preprocessing
+
 Before performing any analysis, the system preprocesses both job descriptions and candidate resumes. This step is crucial for ensuring data consistency and meaningful comparisons. Key skills demonstrated include:
 
-Text Tokenization: Utilizing the Hugging Face Transformers library, the system tokenizes text data, preparing it for subsequent analysis.
+#### Text Tokenization: Utilizing the Hugging Face Transformers library, the system tokenizes text data, preparing it for subsequent analysis.
 
 Lowercasing: Text data is converted to lowercase, ensuring that case sensitivity does not affect similarity calculations.
 
