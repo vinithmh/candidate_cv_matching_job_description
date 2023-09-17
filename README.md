@@ -30,34 +30,34 @@ One of the core functionalities of the Job Matching System is its ability to ext
 
 Before performing any analysis, the system preprocesses both job descriptions and candidate resumes. This step is crucial for ensuring data consistency and meaningful comparisons. Key skills demonstrated include:
 
-#### Text Tokenization: Utilizing the Hugging Face Transformers library, the system tokenizes text data, preparing it for subsequent analysis.
+- **Text Tokenization**: Utilizing the Hugging Face Transformers library, the system tokenizes text data, preparing it for subsequent analysis.
 
-Lowercasing: Text data is converted to lowercase, ensuring that case sensitivity does not affect similarity calculations.
+- **Lowercasing**: Text data is converted to lowercase, ensuring that case sensitivity does not affect similarity calculations.
 
-Stopword Removal: The project employs the NLTK library to remove stopwords from the text, eliminating common words that do not contribute significantly to the analysis.
+- **Stopword Removal**: The project employs the NLTK library to remove stopwords from the text, eliminating common words that do not contribute significantly to the analysis.
 
-Lemmatization: The NLTK library is used again for lemmatizing words, reducing inflected words to their base form, improving analysis accuracy.
+- **Lemmatization**: The NLTK library is used again for lemmatizing words, reducing inflected words to their base form, improving analysis accuracy.
 
-3. Embeddings and Similarity Calculation
+### 3. Embeddings and Similarity Calculation
 The project incorporates pretrained models, specifically the DistilBERT model from Hugging Face, to convert text data into dense vector representations (embeddings). The system then calculates cosine similarities between job descriptions and candidate resumes. This process showcases:
 
-Deep Learning Integration: Demonstrates the integration of advanced deep learning models, enhancing the project's NLP capabilities.
+- **Deep Learning Integration**: Demonstrates the integration of advanced deep learning models, enhancing the project's NLP capabilities.
 
-Cosine Similarity: Utilizes the scikit-learn library to calculate cosine similarity, a fundamental metric for comparing text data.
+- **Cosine Similarity**: Utilizes the scikit-learn library to calculate cosine similarity, a fundamental metric for comparing text data.
 
-4. Data Organization and Management
+### 4. Data Organization and Management
 The project efficiently organizes and manages data, both for job descriptions and candidate resumes. This demonstrates effective data handling and structuring skills, including:
 
-Dataframe Management: Utilizes the Pandas library to organize and manage data in dataframes, simplifying data manipulation.
+- **Dataframe Management**: Utilizes the Pandas library to organize and manage data in dataframes, simplifying data manipulation.
 
-Dictionary Data Structure: Uses dictionaries to store and access data, facilitating structured storage for easy retrieval.
+- **Dictionary Data Structure**: Uses dictionaries to store and access data, facilitating structured storage for easy retrieval.
 
-5. Top Candidate Ranking
+### 5. Top Candidate Ranking
 The system excels in ranking candidate resumes based on their similarity to job descriptions. This process is crucial for identifying the most suitable candidates for specific positions. Key skills demonstrated include:
 
-Dynamic Data Mapping: The project dynamically maps job titles to corresponding candidate resume datasets, allowing for flexibility and scalability.
+- **Dynamic Data Mapping**: The project dynamically maps job titles to corresponding candidate resume datasets, allowing for flexibility and scalability.
 
-Ranking Logic: Utilizes sorting and ranking algorithms to determine the top candidates for each job description, showcasing advanced data analysis capabilities.
+- **Ranking Logic**: Utilizes sorting and ranking algorithms to determine the top candidates for each job description, showcasing advanced data analysis capabilities.
 
 ## Features
 
