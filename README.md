@@ -88,3 +88,24 @@ Getting started with the Job Matching System is straightforward. Follow these in
 1. **Clone the Repository**: Clone the project repository to your local machine using Git.
    ```shell
    git clone https://github.com/yourusername/JobMatchingSystem.git
+
+2. **Install Dependencies**: Install the required Python libraries by running the following command in your terminal.
+
+   pip install -r requirements.txt
+3. **Organize Candidate Resumes**: Organize candidate resumes in PDF format within subdirectories, with each subdirectory representing a job position.
+
+## Usage
+Using the Job Matching System is intuitive and efficient:
+
+- Run Python Scripts: Execute the provided Python scripts to extract, preprocess, and match job descriptions with candidate resumes.
+
+- Customize Configuration: Tailor the system to your specific needs by adjusting configuration settings. Details are available in configuration.md.
+
+- Review Recommendations: Explore the results to identify the top candidates for each job description, as determined by the system.
+
+## Credits and Acknowledgments
+We extend our gratitude to the following individuals, libraries, and tools that have been instrumental in the development of the Job Matching System:
+
+- John Doe for their valuable feedback and suggestions.
+- The Hugging Face Transformers library for its powerful pretrained models.
+- The NLTK library for efficient text preprocessing.
