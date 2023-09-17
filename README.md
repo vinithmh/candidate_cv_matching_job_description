@@ -73,6 +73,14 @@ The Job Matching System offers a range of features designed to streamline the hi
 
 - **Dynamic Data Mapping**: The system dynamically maps job titles to corresponding candidate resume datasets, allowing for flexibility and scalability across industries and job roles.
 
+## Getting Started
+To get started with the Job Matching System, follow these steps:
+
+- Clone the repository to your local machine.
+- Install the required Python libraries using pip install -r requirements.txt.
+- Organize your candidate resumes in PDF format within subdirectories (each subdirectory representing a job position).
+- Run the provided Python scripts to extract, preprocess, and match job descriptions with candidate resumes.
+
 ## Installation
 
 Getting started with the Job Matching System is straightforward. Follow these installation steps:
