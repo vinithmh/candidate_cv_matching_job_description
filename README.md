@@ -18,7 +18,8 @@ The primary purpose of the Job Matching System is to address the challenges face
 By automating the matching process and providing a data-driven approach, this tool helps organizations identify the most qualified candidates quickly and effectively.
 
 ### Key Skills and Capabilities Demonstrated
-1. Data Extraction from PDFs
+## 1. Data Extraction from PDFs
+   
 One of the core functionalities of the Job Matching System is its ability to extract vital information from candidate resumes in PDF format. This is achieved using the PyMuPDF library (PyMuPDF is now known as fitz), and it showcases the following skills:
 
 PDF Parsing: The system demonstrates the ability to parse PDF documents efficiently, extracting text data for further analysis.
