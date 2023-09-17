@@ -1,6 +1,5 @@
 # Job Matching System
 
-![Project Logo](logo.png) <!-- Add your project logo or relevant image here -->
 
 ## Introduction
 
