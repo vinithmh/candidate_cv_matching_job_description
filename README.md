@@ -74,22 +74,20 @@ The Job Matching System offers a range of features designed to streamline the hi
 
 ## Project File Structure
 
-## Project File Structure
-
 Here is an overview of the project's file structure:
 
-- `cvs_ranking`: Directory containing ranking data of candidates based on cosine similarity.
-- `top_5_cvs.csv`: CSV file containing the top 5 candidates for each job description, ranked by cosine similarity.
+- `data`: Directory containing project data, including candidate ranking and extracted PDF data.
+  - `cvs_ranking`: Subdirectory containing candidate ranking data based on cosine similarity.
+    - `top_5_cvs.csv`: CSV file listing the top 5 candidates for each job description, ranked by cosine similarity.
+       - `pdf_extracted_data`: Subdirectory containing extracted data from PDF files. This may include subdirectories or additional files containing extracted information.
+         - `job_descriptions.csv`: CSV file containing job descriptions.
 
-- `pdf_extracted_data`: Directory where extracted PDF data is stored.
-
-- `utils`: Directory containing utility scripts and functions.
-
-- `README.md`: This README file provides an overview of the project and usage instructions.
+- `README.md`: This README file providing an overview of the project and usage instructions.
 
 - `config.py`: Configuration file for specifying file paths and constants.
-- `job_descriptions.csv`: CSV file containing job descriptions.
+
 - `main.py`: The main Python script for running the candidate ranking system.
+
 - `requirements.txt`: A file specifying Python package dependencies.
 
 
