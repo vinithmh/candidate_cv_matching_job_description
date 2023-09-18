@@ -72,6 +72,25 @@ The Job Matching System offers a range of features designed to streamline the hi
 
 - **Dynamic Data Mapping**: The system dynamically maps job titles to corresponding candidate resume datasets, allowing for flexibility and scalability across industries and job roles.
 
+## Project File Structure
+
+Here is an overview of the project's file structure:
+
+- `cvs_ranking`: Directory containing the main project files and code.
+  - `main.py`: The main Python script for running the candidate ranking system.
+  - `config.py`: Configuration file for specifying file paths and constants.
+  - `job_descriptions.csv`: CSV file containing job descriptions.
+  - `requirements.txt`: A file specifying Python package dependencies.
+  - `top_5_cvs.csv`: CSV file containing the top 5 candidates for each job description.
+
+- `pdf_extracted_data`: Directory where extracted PDF data is stored.
+  - (Include subdirectories or files relevant to extracted PDF data if any)
+
+- `utils`: Directory containing utility scripts and functions.
+  - (Include any relevant utility files)
+
+- `README.md`: This README file providing an overview of the project and usage instructions.
+
 ## Getting Started
 To get started with the Job Matching System, follow these steps:
 
