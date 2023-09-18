@@ -107,7 +107,7 @@ This project demonstrates how to match and rank resumes (CVs) with job descripti
 
 Follow these instructions to set up and run the project on your local machine.
 
-### Prerequisites
+## Prerequisites
 
 - Python 3.x
 - [PyTorch](https://pytorch.org/get-started/locally/) (for DistilBERT)
