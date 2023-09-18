@@ -99,27 +99,50 @@ To get started with the Job Matching System, follow these steps:
 - Organize your candidate resumes in PDF format within subdirectories (each subdirectory representing a job position).
 - Run the provided Python scripts to extract, preprocess, and match job descriptions with candidate resumes.
 
+# Resume Matching and Ranking with DistilBERT
+
+This project demonstrates how to match and rank resumes (CVs) with job descriptions using DistilBERT embeddings and cosine similarity. It includes utilities for PDF text extraction, text preprocessing, and ranking candidates based on similarity.
+
+## Getting Started
+
+Follow these instructions to set up and run the project on your local machine.
+
+### Prerequisites
+
+- Python 3.x
+- [PyTorch](https://pytorch.org/get-started/locally/) (for DistilBERT)
+- [Transformers](https://huggingface.co/transformers/installation.html) library (for DistilBERT)
+- Other required Python packages (install them using `pip`):
+
 ## Installation
 
 Getting started with the Job Matching System is straightforward. Follow these installation steps:
 
-1. **Clone the Repository**: Clone the project repository to your local machine using Git.
-   ```shell
-   git clone https://github.com/yourusername/JobMatchingSystem.git
+1. Clone the repository:
+ ```bash
+ git clone https://github.com/yourusername/your-repo-name.git
 
-2. **Install Dependencies**: Install the required Python libraries by running the following command in your terminal.
+2. Navigate to the project directory:
+   cd your-repo-name
 
+3. Install the required Python packages:
    pip install -r requirements.txt
-3. **Organize Candidate Resumes**: Organize candidate resumes in PDF format within subdirectories, with each subdirectory representing a job position.
 
 ## Usage
-Using the Job Matching System is intuitive and efficient:
+1. Prepare your job descriptions in a CSV file (job_descriptions.csv) with a column named job_description.
 
-- Run Python Scripts: Execute the provided Python scripts to extract, preprocess, and match job descriptions with candidate resumes.
+2. Organize your candidate CVs in a folder (candidate_cvs) containing PDF files. The PDFs should include job role, skills, and education sections.
 
-- Customize Configuration: Tailor the system to your specific needs by adjusting configuration settings. Details are available in configuration.md.
+3. Update the paths and configuration in config.py according to your file structure.
 
-- Review Recommendations: Explore the results to identify the top candidates for each job description, as determined by the system.
+4. Run the main script:
+   python main.py
+
+5. The script will calculate rankings, find and export top candidates, and print the top candidates for each job description.
+
+## Customization
+- You can adjust the DistilBERT model and tokenizer in distilBert_embeddings.py to fine-tune the embeddings based on your requirements.
+- Modify the PDF text extraction and preprocessing functions in pdf_extract_utils.py and preprocessing_utils.py to suit your specific needs.
 
 ## Credits and Acknowledgments
 We extend our gratitude to the following individuals, libraries, and tools that have been instrumental in the development of the Job Matching System:
