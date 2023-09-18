@@ -35,7 +35,7 @@ Before performing any analysis, the system preprocesses both job descriptions an
 
 - **Stopword Removal**: The project employs the NLTK library to remove stopwords from the text, eliminating common words that do not contribute significantly to the analysis.
 
-- **Lemmatization**: The NLTK library is used again for lemmatizing words, reducing inflected words to their base form, improving analysis accuracy.
+- **Lemmatization**: The NLTK library is used again for lemmatizing words, reducing inflected words to their base form, and improving analysis accuracy.
 
 ### 3. Embeddings and Similarity Calculation
 The project incorporates pretrained models, specifically the DistilBERT model from Hugging Face, to convert text data into dense vector representations (embeddings). The system then calculates cosine similarities between job descriptions and candidate resumes. This process showcases:
@@ -82,7 +82,7 @@ Here is an overview of the project's file structure:
        - `pdf_extracted_data`: Subdirectory containing extracted data from PDF files. This may include subdirectories or additional files containing extracted information.
          - `job_descriptions.csv`: CSV file containing job descriptions.
 
-- `README.md`: This README file providing an overview of the project and usage instructions.
+- `README.md`: This README file provides an overview of the project and usage instructions.
 
 - `config.py`: Configuration file for specifying file paths and constants.
 
