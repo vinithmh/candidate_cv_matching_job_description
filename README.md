@@ -66,7 +66,7 @@ The Job Matching System offers a range of features designed to streamline the hi
 
 - **Text Preprocessing for Consistency**: It preprocesses both job descriptions and resumes, ensuring consistency and meaningful comparisons by removing noise, stopwords, and inflections.
 
-- **Utilization of Pretrained Models**: Leveraging state-of-the-art pretrained models like DistilBERT from Hugging Face, the system converts text data into dense vector representations (embeddings).
+- **Utilization of pre-trained Models**: Leveraging state-of-the-art pre-trained models like DistilBERT from Hugging Face, the system converts text data into dense vector representations (embeddings).
 
 - **Calculation of Cosine Similarities**: The project calculates cosine similarities between job descriptions and candidate resumes to determine the best fit candidates for each position.
 
@@ -74,22 +74,24 @@ The Job Matching System offers a range of features designed to streamline the hi
 
 ## Project File Structure
 
+## Project File Structure
+
 Here is an overview of the project's file structure:
 
-- `cvs_ranking`: Directory containing the main project files and code.
-  - `main.py`: The main Python script for running the candidate ranking system.
-  - `config.py`: Configuration file for specifying file paths and constants.
-  - `job_descriptions.csv`: CSV file containing job descriptions.
-  - `requirements.txt`: A file specifying Python package dependencies.
-  - `top_5_cvs.csv`: CSV file containing the top 5 candidates for each job description.
+- `cvs_ranking`: Directory containing ranking data of candidates based on cosine similarity.
+- `top_5_cvs.csv`: CSV file containing the top 5 candidates for each job description, ranked by cosine similarity.
 
 - `pdf_extracted_data`: Directory where extracted PDF data is stored.
-  - (Include subdirectories or files relevant to extracted PDF data if any)
 
 - `utils`: Directory containing utility scripts and functions.
-  - (Include any relevant utility files)
 
-- `README.md`: This README file providing an overview of the project and usage instructions.
+- `README.md`: This README file provides an overview of the project and usage instructions.
+
+- `config.py`: Configuration file for specifying file paths and constants.
+- `job_descriptions.csv`: CSV file containing job descriptions.
+- `main.py`: The main Python script for running the candidate ranking system.
+- `requirements.txt`: A file specifying Python package dependencies.
+
 
 # Resume Matching and Ranking with DistilBERT
 
