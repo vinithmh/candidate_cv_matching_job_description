@@ -91,14 +91,6 @@ Here is an overview of the project's file structure:
 
 - `README.md`: This README file providing an overview of the project and usage instructions.
 
-## Getting Started
-To get started with the Job Matching System, follow these steps:
-
-- Clone the repository to your local machine.
-- Install the required Python libraries using pip install -r requirements.txt.
-- Organize your candidate resumes in PDF format within subdirectories (each subdirectory representing a job position).
-- Run the provided Python scripts to extract, preprocess, and match job descriptions with candidate resumes.
-
 # Resume Matching and Ranking with DistilBERT
 
 This project demonstrates how to match and rank resumes (CVs) with job descriptions using DistilBERT embeddings and cosine similarity. It includes utilities for PDF text extraction, text preprocessing, and ranking candidates based on similarity.
