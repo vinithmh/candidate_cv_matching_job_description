@@ -119,14 +119,13 @@ Follow these instructions to set up and run the project on your local machine.
 Getting started with the Job Matching System is straightforward. Follow these installation steps:
 
 1. Clone the repository:
- ```bash
  git clone https://github.com/yourusername/your-repo-name.git
 
 2. Navigate to the project directory:
    cd your-repo-name
 
 3. Install the required Python packages:
-   pip install -r requirements.txt ```
+   pip install -r requirements.txt 
 
 ## Usage
 1. Prepare your job descriptions in a CSV file (job_descriptions.csv) with a column named job_description.
