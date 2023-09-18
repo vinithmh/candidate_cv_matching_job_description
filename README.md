@@ -126,7 +126,7 @@ Getting started with the Job Matching System is straightforward. Follow these in
    cd your-repo-name
 
 3. Install the required Python packages:
-   pip install -r requirements.txt
+   pip install -r requirements.txt ```
 
 ## Usage
 1. Prepare your job descriptions in a CSV file (job_descriptions.csv) with a column named job_description.
