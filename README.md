@@ -84,13 +84,13 @@ Here is an overview of the project's file structure:
         
 - Utils Folder: This folder contains utility functions that can be used across your project. Below is a brief description of each utility file:
 
-- distilBert_embeddings.py : This file contains utility functions for working with DistilBERT embeddings. It includes functions for extracting embeddings from text using the DistilBERT model.
+   - distilBert_embeddings.py : This file contains utility functions for working with DistilBERT embeddings. It includes functions for extracting embeddings from text using the DistilBERT model.
 
-- pdf_extract_utils.py : This file contains utility functions for extracting text and information from PDF files. It may include functions for text extraction, metadata extraction, and other PDF-related tasks.
+      - pdf_extract_utils.py : This file contains utility functions for extracting text and information from PDF files. It may include functions for text extraction, metadata extraction, and other PDF-related tasks.
 
-- preprocessing_utils.py : This file contains utility functions for text preprocessing. It includes functions for removing punctuation, stopwords, and performing other text cleaning tasks to prepare text data for analysis.
+         - preprocessing_utils.py : This file contains utility functions for text preprocessing. It includes functions for removing punctuation, stopwords, and performing other text cleaning tasks to prepare text data for analysis.
 
-- ranking_utils.py : This file contains utility functions for ranking and similarity calculations. It may include functions for calculating cosine similarity, ranking documents, and creating ranked dataframes.
+            - ranking_utils.py : This file contains utility functions for ranking and similarity calculations. It may include functions for calculating cosine similarity, ranking documents, and creating ranked dataframes.
 
 - `README.md`: This README file provides an overview of the project and usage instructions.
 
