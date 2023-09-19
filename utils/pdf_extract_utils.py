@@ -1,8 +1,8 @@
 # pdf_extract_utils.py
 
-import os
-import fitz  # PyMuPDF
-import pandas as pd
+from os.path import join
+from fitz import open as fitz_open
+from pandas import DataFrame
 
 # Define the function to extract text content from a PDF file using PyMuPDF
 def extract_text_from_pdf(pdf_file_path):
@@ -15,13 +15,12 @@ def extract_text_from_pdf(pdf_file_path):
     Returns:
         str: The extracted text content.
     """
-    doc = fitz.open(pdf_file_path)
+    doc = fitz_open(pdf_file_path)
     text = ""
     for page_num in range(doc.page_count):
         page = doc[page_num]
         text += page.get_text()
     return text
-
 
 # Define the function to extract the job role from a PDF file
 def extract_job_role_from_pdf(pdf_file_path):
@@ -122,7 +121,7 @@ def extract_and_clean_data(root_folder):
     for dirpath, dirnames, filenames in os.walk(root_folder):
         for file in filenames:
             if file.endswith(".pdf"):
-                pdf_path = os.path.join(dirpath, file)
+                pdf_path = join(dirpath, file)
                 job_role = extract_job_role_from_pdf(pdf_path)
                 skills = extract_skills_from_pdf(pdf_path)
                 education = extract_education_from_pdf(pdf_path)
@@ -156,7 +155,7 @@ def extract_and_clean_data(root_folder):
         cleaned_corpus[subfolder] = details_dict
 
         # Create DataFrames
-        df = pd.DataFrame(details_dict)
+        df = DataFrame(details_dict)
 
         # Combine "Job Role," "Skills," and "Education" columns into a single column with spaces
         df["Details"] = df["Job Role"] + " " + df["Skills"] + " " + df["Education"]
@@ -167,4 +166,3 @@ def extract_and_clean_data(root_folder):
         cleaned_corpus[subfolder] = df
 
     return cleaned_corpus
-
