@@ -1,4 +1,4 @@
-import pandas as pd
+from pandas import read_csv
 from config import JOB_DESCRIPTIONS_FILE, DATAFRAMES_DIR, JOB_DESCRIPTION_COLUMN
 from utils.pdf_extract_utils import extract_and_clean_data
 from utils.preprocessing_utils import preprocess_text
@@ -7,7 +7,7 @@ from utils.ranking_utils import calculate_rankings, export_rankings, find_top_ca
 
 def main():
     # Load job descriptions and dataframes
-    sel_job_desp_df = pd.read_csv(JOB_DESCRIPTIONS_FILE)
+    sel_job_desp_df = read_csv(JOB_DESCRIPTIONS_FILE)
     dataframes = extract_and_clean_data(DATAFRAMES_DIR)
 
     # Apply the preprocess_text function to the "job_description" column
