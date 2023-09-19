@@ -1,8 +1,8 @@
 # ranking_utils.py
 
-import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
+from numpy import array, argsort
+from pandas import DataFrame
 
 def calculate_rankings(sel_job_desp_df, dataframes):
     position_title_mapping = dict(zip(sel_job_desp_df['position_title'], dataframes.keys()))
@@ -10,20 +10,20 @@ def calculate_rankings(sel_job_desp_df, dataframes):
 
     for position_title, job_description in zip(sel_job_desp_df['position_title'], sel_job_desp_df['job_description']):
         similarities = {}
-        job_description = np.array(job_description).reshape(1, -1)  # Ensure job_description is a 2D array
+        job_description = array(job_description).reshape(1, -1)  # Ensure job_description is a 2D array
         cv_df = dataframes[position_title_mapping[position_title]]  # Get the corresponding DataFrame
-        cv_embeddings = np.array(list(cv_df['Details']))  # Assuming 'Details' column contains CV embeddings
+        cv_embeddings = array(list(cv_df['Details']))  # Assuming 'Details' column contains CV embeddings
 
         # Calculate cosine similarities within the corresponding DataFrame
         similarities = cosine_similarity(job_description, cv_embeddings)
 
         # Get the PDF file names and ranks based on similarity
         pdf_file_names = cv_df['PDF File Name']
-        ranked_pdf_file_names = [pdf_file_names[i] for i in np.argsort(similarities[0])[::-1]]
+        ranked_pdf_file_names = [pdf_file_names[i] for i in argsort(similarities[0])[::-1]]
 
         # Create a new DataFrame with PDF ranks and cosine similarities
-        rank_df = pd.DataFrame({'PDF File Name': ranked_pdf_file_names,
-                                'Cosine Similarity': similarities[0][np.argsort(similarities[0])[::-1]]})
+        rank_df = DataFrame({'PDF File Name': ranked_pdf_file_names,
+                             'Cosine Similarity': similarities[0][argsort(similarities[0])[::-1]]})
 
         # Store the dataframe in the dictionary
         dataframes_with_ranks[position_title] = rank_df
@@ -58,7 +58,7 @@ def find_top_candidates(dataframes, sel_job_desp_df):
     return top_5_cvs
 
 def export_top_candidates(top_5_cvs):
-    results_df = pd.DataFrame.from_dict(top_5_cvs, orient='index', columns=['Rank 1 PDF File', 'Rank 2 PDF File', 'Rank 3 PDF File', 'Rank 4 PDF File', 'Rank 5 PDF File'])
+    results_df = DataFrame.from_dict(top_5_cvs, orient='index', columns=['Rank 1 PDF File', 'Rank 2 PDF File', 'Rank 3 PDF File', 'Rank 4 PDF File', 'Rank 5 PDF File'])
     results_df.to_csv('top_5_cvs.csv')
 
 def print_top_candidates(top_5_cvs):
