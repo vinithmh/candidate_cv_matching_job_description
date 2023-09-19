@@ -3,6 +3,7 @@
 from os.path import join
 from fitz import open as fitz_open
 from pandas import DataFrame
+from os import walk
 
 # Define the function to extract text content from a PDF file using PyMuPDF
 def extract_text_from_pdf(pdf_file_path):
