@@ -1,6 +1,6 @@
 # distilBert_embeddings.py
 
-import torch
+from torch.autograd import no_grad
 from transformers import DistilBertTokenizer, DistilBertModel
 
 # Initialize DistilBERT model and tokenizer
