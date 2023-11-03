@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The Job Matching System is an advanced Python-based project that leverages state-of-the-art Natural Language Processing (NLP) techniques to streamline the process of matching job descriptions with candidate resumes. This project showcases a rich set of skills and capabilities that make it a valuable tool for HR professionals and hiring managers seeking efficient and effective candidate screening.
+The Resume Ranking System is an advanced Python-based project that leverages state-of-the-art Natural Language Processing (NLP) techniques to streamline the process of matching job descriptions with candidate resumes. This project showcases a rich set of skills and capabilities that make it a valuable tool for HR professionals and hiring managers seeking efficient and effective candidate screening.
 
 ## Purpose
 
-The primary purpose of the Job Matching System is to address the challenges faced during the hiring process, such as:
+The primary purpose of the Resume Ranking System is to address the challenges faced during the hiring process, such as:
 
 - Sorting through a large volume of resumes to identify suitable candidates.
 - Ensuring that candidate qualifications align with job requirements.
@@ -19,7 +19,7 @@ By automating the matching process and providing a data-driven approach, this to
 ## Key Skills and Capabilities Demonstrated
 ### 1. Data Extraction from PDFs
    
-One of the core functionalities of the Job Matching System is its ability to extract vital information from candidate resumes in PDF format. This is achieved using the PyMuPDF library (PyMuPDF is now known as fitz), and it showcases the following skills:
+One of the core functionalities of the Resume Ranking System is its ability to extract vital information from candidate resumes in PDF format. This is achieved using the PyMuPDF library (PyMuPDF is now known as fitz), and it showcases the following skills:
 
 - **PDF Parsing**: The system demonstrates the ability to parse PDF documents efficiently, extracting text data for further analysis.
 
